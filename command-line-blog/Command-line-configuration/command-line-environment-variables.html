@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Environment Variables</title>
+    </head>
+    <body>
+        <h1>Environment Variables & PS1</h1>
+        <p>Environment variables can be used across commands and programs that hold information about the environment.<br>
+        What happens when you store the following command below in <strong>$ ~/.bash_profile</strong>?</p>
+        <p><strong>$ export USER="Jane Doe"</strong></p>
+        <ol>
+            <li>The line <strong>$ USER="Jane Doe"</strong> sets the environment variable to a user named Jane Doe.</li>
+            <li>The line <strong>export</strong> makes the variable to be avaliable to all child sessions initiated <br>
+            from the session you are in. This makes the variable persistant.</li>
+            <li>At the command line, the command <strong>$echo $USER</strong> returns the value of that variable. Note <br>
+            that $ is always used when returning a variables value. Here, the command echo $USER returns the name set for<br>
+            the variable.</li>
+        </ol>
+        <h2>PS1 Variable</h2>
+        <p>The PS1 variable defines the makeup and style of of the command prompt.<br>
+        What happens when this is stored in the <strong>$ ~/.bash_profile</strong>?</p>
+        <p><strong>$ export PS1=">>"</strong></p>
+        <ol>
+            <li><strong>$ export PS1=">>"</strong> sets the command prompt variable and exports the variable. Here we change<br>
+            the default command prompt from $ to >>.</li>
+            <li>After using the <strong>source</strong> command, the command line displays the new command prompt.</li>
+        </ol>
+        <h2>The HOME Environment Variable</h2>
+        <p>What happens when I type the command below?</p>
+        <p><strong>$ echo $HOME</strong></p>
+        <p>The HOME environment variable displays the path of the home directory ~. The HOME variable can be specified & changed.</p>
+        <p>By typing <storng>$ echo $HOME</storng>, the terminal displays the path /home/ccuser as output.</p>
+
+        
+
+    </body>
+</html>

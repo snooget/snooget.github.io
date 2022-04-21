@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html>
+
+    <head>
+        <title>Git & GitHub Workflow Notes Add, Diff, and Commit</title>
+    </head>
+
+    <body>
+        <h1><strong>Git & GitHub Workflow Notes Add, Diff, and Commit</strong></h1>
+        <br>
+        <h2><strong>git status</strong></h2>
+        <p>As you work, you will change the contents of the wokring direcotry. Use "git status" to view the changes.</p>
+        <p><strong>git status</strong></p>
+
+        <h2><strong>git add</strong></h2>
+        <p>In order for git to start tracking, files must be added to the staging area. We can use "git add" to add a file<br>
+        to the staging area.</p>
+        <p><strong>git add filename</strong></p>
+        <p>The word filename above stands for the name of your files in that space.</p>
+
+        <h2><strong>git diff</strong></h2>
+        <p>With <strong>git add</strong> we added files to the staging area. Since added files are now tracked by Git, <br>
+        we can check the differences between the working directory and staging area with the command below:</p>
+        <p><strong>git diff filename</strong></p>
+
+        <h2><strong>git commit</strong></h2>
+        <p>git commit is the last step in our workflow. A <strong>git commit</strong> permanetly stores changes from staging <br>
+        area to the repository.</p>
+        <p><strong>git commit</strong> is followed with an <strong>-m</strong> option.<br>
+        Here's an example:</p>
+        <p><strong>git commit -m "complete first line of dialouge"</strong></p>
+        <p>Here are some standard conventions to follow when using <strong>git commit</strong> commands.</p>
+        <ul>
+            <li>Must be in quotation marks.</li>
+            <li>Written in present tense.</li>
+            <li>Should be breif, 50 characters or less when using -m.</li>
+        </ul>
+        
+        <h2><strong>git log</strong></h2>
+        <p>Finally we have <strong>git log</strong> which checks all previous versions of a project. Commits are stored<br>
+        chronologically in repository."git log" ahows them.</p>
+    </body>
+
+</html>

@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html>
+
+    <head>
+        <title>Bash Profiles & Aliases</title>
+    </head>
+
+    <body>
+        <h1>Bash Profiles & Aliases</h1>
+        <p>A bash profile is used to store environment settings for your terminal. It is accessible by the name <br>
+        <storng>~/.bash_profile</storng>.</p>
+        <p>When a session starts, it loads the contents of the bash profile before executing commands.</p>
+        <ul>
+            <li>The <strong>~</strong> represents the users home directory.</li>
+            <li>The <strong>.</strong> indicates a hidden file.</li>
+            <li>The name <strong>~/.bash_profile</strong>is important. Since this is how the command li<br>
+            -ne reconizes the bash profile.</li>
+        </ul>
+        <p>To open and edit the bash profile we will type:</p>
+        <p><strong>$ ~/.bash_profile</strong></p>
+        <h2>Aliases Notes</h2>
+        <p>As mentioned earlier, settings and commands can be added everytime a new terminal session is started <br>
+        One setting that can be created to save commands and setting options is the: <strong>alias</strong>.</p>
+        <p><strong>$ alias pd="pwd"</strong></p>
+        <p>The alias command allows you to create shortcuts for commonly used commands. In the command above,<br>
+        <strong>$ alias pd="pwd"</strong> creates the alias for the <strong>pwd</strong> command. It is then <br>
+        saved in bash profiles.</p>
+        <p>The <strong>pd</strong> alias will be avaliable next time we open a new temrinal session, and the <br>
+        output will be the same as the "pwd" command.</p>
+        <h2>Aliases II</h2>
+        <p>We can add as many aliases as we want into a bash profile. Here are a few examples.</p>
+        <p><storng>$ alias hy="history"</storng></p>
+        <p>In the code above, hy is set as an alias for the history command. Typing "hy" in the command line outputs <br>
+        a history of commands entered in the current session.</p>
+        <p><strong>$ alias ll="ls -la"</strong></p>
+        <P>In the code above ll is set as an alias for ls -la.</P>
+        
+    </body>
+
+</html>

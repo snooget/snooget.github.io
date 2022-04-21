@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html>
+
+    <head>
+
+        <title>Command Line Redirection (sed) Command</title>
+
+    </head>
+
+    <body>
+
+        <h1>The (sed) Command</h1>
+        <P><strong>$ sed 's/snow/rain/' forests.txt</strong></P>
+        <p>sed stands for "stream editor". It accepts standard input and modifies it based on the expression, before<br>
+        displaying it as output data. It is similar to find and replace.</p>
+        <p>Looking at the expression '/snow/rain/':</p>
+        <ul>
+          <li><em>s</em> stands for "substituition." It is always used when using (sed) for substituition.</li>
+          <li><em>snow</em>: the search string or the text to find.</li>
+          <li><em>rain</em>: the replacement string, or text to add in place.</li>  
+        </ul>
+        <p>In the code above (sed) searches <strong>forests.txt</strong> for the word "snow" and replaces it with rain<br>
+        globally. This means all instances of snow on a line will be turned to rain.</p>
+        <p>So far we have only used (sed) to rewrite the command line output and the actual file wont look different.<br>
+        To make actual changes to a file we must use the -i option with (sed). Here's and exmaple:</p>
+        <p><strong>$ sed -i 's/snow/rain/g' forests.txt</strong></p>
+        <p>The command above rewrites forests.txt and replaces all instances of snow with rain.</p>
+
+    </body>
+
+
+
+
+</html>

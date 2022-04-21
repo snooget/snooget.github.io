@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+
+<html>
+
+    <head>
+        <title>git Branching Intro</title>
+    </head>
+
+    <body>
+        <h1><strong>git Branching Intro</strong></h1>
+        <p>Most of the work I have done for git has been on a single branch.<br>
+        I will learn how to switch from main to other branches with git commands.</p>
+        <p>git allows us to create seperate branches in order to experiment with code<br>
+        and create different versions of a project.</p>
+        <p>To check the current branch type:</p>
+        <p><strong>$ git branch</strong></p>
+        
+        <h2><strong>git Branching II</strong></h2>
+        <p>Many projects will have a master commonly called main branch. To create a<br>
+        new branch, use:</p>
+        <p><strong>$ git branch new_branch</strong></p>
+        <p>The words "new_branch" will be something that describes the purpose of the<br>
+        branch. Remember that branch names can't contain whitespace.</p>
+
+        <h2><strong>$ git Checkout</strong></h2>
+        <p><strong>$ git checkout branch_name</strong></p>
+        <p>The command above allows you to switch branches and make new edits under the<br>
+        selected branch.</p>
+
+        <p>When switching branches you are able to do all commands that you where able to<br>
+        previously do in the main branch.</p>
+
+        <h2><strong>$ git merge</strong></h2>
+        <p>Once you are satisfied with the edits on the other branch you can then merge the<br>
+        content from the named branch to the main branch.</p>
+        <p>This is accomplished by typing:</p>
+        <p><strong>$ git merge branch_name</strong></p>
+
+        <h2><strong>merge conflict I</strong></h2>
+        <p>Merge conflicts occur for a few reasons, here is one: Imagine you made commits on<br>
+        the main branch before merging the secondary branch. Additionally, what if you made a<br>
+        commit on main that alters the same exact text you worked on in the secondary branch. This<br>
+        is how merge conflicts emerge. Here's how to solve them:</p>
+        <p>A merge error will appear when you do as described above. To fix it you will refresh the<br>
+        text editor and see two versions of the edit. You can select which one you prefer then create<br>
+        a new commit, and viola! Problem solved!</p>
+
+        <h2><strong>delete branch</strong></h2>
+        <p>git branches are a means to an end and are meant to be merged into the main branch.<br>
+        The command:</p>
+        <p><strong>$ git branch -d branch_name</strong></p>
+        <p>is used to delete a branch once it has been merged.</p>
+        
+        
+    </body>
+
+</html>

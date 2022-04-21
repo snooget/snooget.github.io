@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html>
+
+    <head>
+
+        <title>uniq & grep | commands</title>
+
+    </head>
+
+    <body>
+
+        <h1>uniq & grep | commands</h1>
+        <p><strong>$ uniq deserts.txt</strong></p>
+        <p>uniq stands for "unique". It filters out adjacent, duplicate lines in a file. Here uniq deserts.txt filters out <br>
+        duplicates of "sahara desert", because its duplicate directly follows the previous instance. The "kalahari desert" <br>
+        duplicates are not adjacent and thus remain.</p>
+        <p><strong>$ sort deserts.txt | uniq</strong></p>
+        <p>A more effective way to use uniq is to call sort to alphabetize a file, and "pipe" the standard output to uniq. <br>
+        By "piping" $ sort deserts.txt to uniq all duplicate lines are alphabetized and filtered out.</p>
+        <p><strong>$ sort deserts.txt | uniq > uniq-deserts.txt</strong></p>
+        <p>Here we simply send filtered contents to uniq-deserts.txt which you can view with the cat command.</p>
+        
+        <br>
+        
+        <h2>grep command & grep -i option</h2>
+        <p><storng>$ grep America continents.txt</storng></p>
+        <p>grep stands for "global regular expression print" Its purpose is to search files for lines that match a <br>
+        pattern and then return the results. <br>
+        grep is case-sensitive. In the bolded commands above we use grep to search for anything that matched "America"<br>
+        in <strong>continents.txt</strong>.</p>
+        <p><strong>$ grep -i America continents.txt</strong></p>
+        <p>The -i option for grep allows the command to be case insensitive. Here, grep searched for capital of lowercase <br>
+        strings that match "America" in the <strong>continents.txt</strong> file.</p>
+       
+        <br>
+        
+        <h2>grep II</h2>
+        
+        <p><strong>$ grep -R Arctic<br>
+        /home/ccuser/workspace/geography<br>
+        <br>
+        /home/ccuser/workspace/geography/deserts.txt: Arctic Desert<br>
+        /home/ccuser/workspace/geography/oceans.txt: Arctic Ocean
+        </strong></p>
+        <p>The grep -r option searches for all files in a directory and outputs filenames and lines containing all <br>
+        matches results. The -r stands for "recursive"</p>
+        <p>In the commands above grep -r searched the /home/ccuser/workspace/geography for the string "Arctic" and <br>
+        outputted filenames and lines with matching results.</p>
+        <br>
+        <p><strong>$ grep -Rl Arctic<br>
+        /home/ccuser/workspace/geography<br>
+        <br>
+        /home/ccuser/workspace/geography/deserts.txt<br>
+        /home/ccuser/workspace/geography/oceans.txt
+        </strong></p>
+        <p>grep -Rl searches all files in a directory and outputs only filenames with matched results (no lines). Above, <br>
+        grep -Rl searched the /home/ccuser/workspace/geography directory for the string "Arctic" and outputs filenames wi<br>
+        -th matched results.</p>
+
+
+
+        <br>
+    </body>
+
+</html>

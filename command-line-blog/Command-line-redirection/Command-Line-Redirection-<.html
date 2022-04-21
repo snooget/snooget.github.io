@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html>
+
+    <head>
+        <title>Command Line Redirection (< & | & Sort)</title>
+    </head>
+
+    <body>
+
+        <h1>Command Line Redirection (<)</h1>
+        <p><strong>$ cat < deserts.txt</strong></p>
+        <p>< takes standard input from the file on the right and inputs it into the program <br>
+        on the left. In the code above <strong>deserts.txt</strong> is the standard input <br>
+        for the $ cat command.</p>
+        <br>
+        <h2><strong>The | (Pipe) Command</strong></h2>
+        <p>| is a pipe. The | takes the standard output of the command on the left, and pipes <br>
+        it as standard input to the command on the right. This can also be thought of as a <br>
+        command to command redirection.</p>
+        <p>Here's a coded example:</p>
+        <p><strong>$ cat volcanos.txt | wc</strong></p>
+        <p>Above the output of <strong>cat volcanos.txt</strong> becomes the standard input of <br>
+        wc. In turn, the wc command outputs the number of words, lines, and characters in <br>
+        <strong>volcanos.txt</strong>.</p>
+        <p><strong>$ cat volcanoes.txt | wc | cat > islands.txt</strong></p>
+        <p>Multiple |'s can be chained together. In the command above the standard output of <br>
+        <strong>$ cat volcanoes.txt</strong> is "piped" to the (wc) command. The standard output <br>
+        of (wc) is then "piped" to $ cat. Finally, the standard output of $ cat is redirected <br>
+        to the <strong>islands.txt</strong>.</p>
+        <br>
+        <h2>Sort Command</h2>
+        <p><strong>$ sort continents.txt</strong></p>
+        <p>sort takes the standard input and orders it alphabetically for standard output. Here <br>
+        the continents in <strong>continents.txt</strong>will be listed in alphabetical order.</p>
+        <p><strong>$ cat glaciers.txt | sort > sorted-glaciers.txt</strong></p>
+        <p>Here the command takes the standard output from <strong>$ cat glaciers.txt</strong> <br>
+        and "pipes" it to (sort). The standard output of (sort) is redirected to a new file names <br>
+        sorted-glaciers.txt</p>
+        
+    </body>
+
+</html>

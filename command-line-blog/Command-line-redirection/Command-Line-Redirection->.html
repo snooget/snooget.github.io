@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html>
+
+    <head>
+        <title>Command Line Notes (>)</title>
+    </head>
+
+    <body>
+
+        <h1>(>) Command</h1>
+        <p><strong>$ cat deserts.txt > forests.txt</strong></p>
+        
+        <p>(>) takes the standard output of the command on the left, and redirects it to the file on the right. <br>
+        Here the standard output of $ cat deserts.txt is redirected to <strong>forests.txt</strong></p>
+        <p>Keep in mind that (>) overwrites all original content in forests.txt. When you view the output data<br>
+        by using (cat) on <strong>forests.txt</strong>, you will only see contents of <strong>deserts.txt</strong></p>
+        <br>
+        <h2>(>>)</h2>
+        <p>Above we learned how to overwrite a files contents, but what if we want to add to a file <br>
+        without losing the original text? We use the <strong>>> command!</strong></p>
+        <p><strong>$ cat deserts.txt >> forests.txt</strong></p>
+        <br>
+        <p>Here the output data of forests.txt will contain its original content along with the content of <br>
+        deserts.txt appended to it.</p>
+        
+        <!--
+        <h2>grep command & grep -i option</h2>
+        <p><storng>$ grep America continents.txt</storng></p>
+        <p>grep stands for "global regular expression print" Its purpose is to search files for lines that match a <br>
+        pattern and then return the results. <br>
+        grep is case-sensitive. In the bolded commands above we use grep to search for anything that matched "America"<br>
+        in <strong>continents.txt</strong>.</p>
+        -->
+    </body>
+
+</html>

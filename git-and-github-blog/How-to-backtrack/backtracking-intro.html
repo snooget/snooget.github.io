@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+
+<html>
+
+    <head>
+        <title>Backtracking Intro Notes</title>
+    </head>
+
+    <body>
+        <h1>Backtracking Intro Notes</h1>
+        <p>When working on a Git project, sometimes we make changes that we want to get rid of. Git offers, a few <br>
+        features that allow us to undo mistakes during project creation.</p>
+
+        <h2><strong>Head commit</strong></h2>
+        <p>In Git the commit you are currently on is called the HEAD commit. In many cases the most recent commit <br>
+        is the HEAD commit. To see a HEAD commit enter:</p>
+        <p><strong>git show HEAD</strong></p>
+
+        <h2><strong>git checkout</strong></h2>
+        <p>This is useful for when you make a change and decide you would like to undo it. You may have forgotten a<br>
+        line of code and to return/undo it to the original wording you would use the following git command:</p>
+        <p><strong>git checkout HEAD filename</strong></p>
+        <p>This command will restore the file in your working directory, to look exactly as it did when you made a commit.</p>
+
+        <h2><strong>git add</strong></h2>
+        <p>In git, it is common to change many files, add thoes files to the staging area, and commit them to a repository in<br>
+        a single commit.</p>
+        <p>For example, lets say you would like to replace the word LARRY with LAERTES. If the name was contained in two<br>
+        files you can edit them in editor, then add them to the staging area with:</p>
+        <p><strong>git add filename_1 filename_2</strong></p>
+
+        <h2><strong>git reset I</strong></h2>
+        <p>The files we previously added to the same commit were a success, and now belong to the same commit. What if,<br>
+        before you commit, you accidently delete an important scene from one of the txt files? Unthinkingly adding, the<br>
+        scene-2.txt to staging area. The file change is unrelated to the Larry/Laertes swap, and not included in the commit.</p>
+        <p>A file can be <em>unstaged</em> from the staging area by using:</p>
+        <p><strong>git reset HEAD filename</strong></p>
+        <p>The command above resets the file in the staging area to be the same as the head commit. It does not discard changes<br>
+        from the working directory, it just removes them from the staging area.</p>
+
+        <h2><strong>git reset II</strong></h2>
+        <p>Creating a project is like hiking in a forest. Sometimes you take a wrong turn and find yourself lost. Just like<br>
+        retracting your steps on a hike, git enables you to rewind to that part before you made the wrong turn. Look:</p>
+        <p><strong>git reset commit_SHA</strong></p>
+        <p>This command works by using the first 7 characters of the SHA of a previous commit. For example, if the SHA of a<br>
+        previous commit is <em>5d692065cf51a2f50ea8e7b19b5a7ae512f633ba</em> ,use:</p>
+        <p><strong>git reset 5d69206</strong></p>
+        <p><strong>HEAD</strong> is now set to the previous commit.</p>
+        
+    </body>
+
+
+</html>

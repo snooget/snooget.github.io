@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html>
+
+    <head>
+
+        <title>Command Line Redirection Review and Questions</title>
+        
+    </head>
+
+    <body>
+
+        <h1>Command Line Redirection Review & Questions</h1>
+        <p>Here is what can be generalized so far:</p>
+        <ul>
+            <li><em>Redirection</em>: reroutes standard input, output, and error.</li>
+            <br>
+            <li>The common redirection commands are:<br>
+                <ul>
+                    <li><em>></em> redirects standard output of a command to a file, overwriting previous content</li>   
+                    <li><em>>></em> redirects standard output of a command to a file, appending the new content to <br>
+                    the old content.</li>
+                    <li>< redirects standard input to a command.</li> 
+                    <li>| redirects standard output of a command to another command.</li>
+                </ul>
+            <br>
+            </li>
+            <li>A number of other commands are powerful when combined with redirection commands:</li>
+                <ul>
+                    <li><em>sort</em>: sorts lines of text alphabetically.</li>
+                    <li><em>uniq</em>: filters duplicate, adjacet lines of text.</li>
+                    <li><em>grep</em>: searches for a text pattern and outputs it.</li>
+                    <li><em>sed</em>: searches for a text pattern, modifies it, and outputs it.</li>
+                </ul>
+        </ul>
+        <h2>Redirecting Input and Output Questions & Anwsers:</h2>
+        <p><strong>What command outputs the string "Lamar" to the file greatests.txt?</strong></p>
+        <p><strong>Answer:</strong> $ echo "Lamar" > greatest.txt (It takes "Lamar" from stdin to the echo command <br>
+        and redirects it to greatest.txt</p>
+        <br>
+        <p><strong>Append the string "Aseop Rock" to the file greatest.txt</strong></p>
+        <p><strong>Answer:</strong> The code above takes the output from echo "Aseop Rock" and appends it to the <br>
+        end of whatever is already in the greatest.txt.</p>
+        <br>
+        <p><strong>The echo command takes a string as _____ and prints that string as ____?</strong></p>
+        <p><strong>Answer:</strong> stdin & stdout (stdin is an input stream and stdout is an output stream)</p>
+        <br>
+        <p><strong>What command searches all files recursivley for "Gambino"?</strong></p>
+        <p><strong>Answer:</strong> -R for grep (it searches files recursivly)</p>
+        <br>
+        <p><strong>How would you pipe results from one command to another?</strong></p>
+        <p><strong>Answer:</strong> use command | command (this will take the output on the left of the | and make <br>
+        it the inpiut of the command on the right.</p>
+        <br>
+        <p><strong>What commands would sort the contents of the file greatest.txt and print them?</strong></p>
+        <p><strong>Answer: $ cat greatest.txt | sort </strong></p>
+        <br>
+        <p><strong>What does the s stand for in 's/Hopsin/Kanye' part of sed 's/Hopsin/Kanye'?</strong></p>
+        <p><strong>Substitute</strong></p>
+        <br>
+        <p><strong>The uniq command removes duplicates</strong></p>
+        <p><strong>Answer:</strong>Only if they are adjacent</p>
+        <br>
+        <p><strong>What does the < symbol do?</strong></p>
+        <p><strong>Answer:</strong>It redirects input to a command</p>
+
+
+    </body>
+
+</html>

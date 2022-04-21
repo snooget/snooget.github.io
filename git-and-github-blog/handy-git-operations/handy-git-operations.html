@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+
+<html>
+
+    <head>
+        <title>Handy Git Operations</title>
+    </head>
+
+    <body>
+        <h1>Handy Git Operations</h1>
+        <h2><strong>Intro</strong></h2>
+        <p>Git provides us with a vast number of different commands listed in the documentation. Here are a few.</p>
+        
+        <h2>Git Stash</h2>
+        <p>Let's say you are working on experimental code in a fresh new branch. After some time you realize that you forgot<br>
+        to add something to the previous commit.</p>
+        <p>In order to go on to a different branch one must always be at a clean commit. In this example you haven't commited<br>
+        your experimental code as it is not ready. However, you don't want to loose all the code you've been working on.</p>
+        <p>A good way to handle this situation is to use <em>git stash</em> as it allows you to get back to a clean commit<br>
+        point wihtout loosing your experimental code work.</p>
+        <p>Once you fix up the code on the previous commit, you can use <em>git stash pop</em> to continue off on the work<br>
+        that was previously stashed.</p>
+
+        <h2><strong>git log</strong></h2>
+        <p>We are quite familiar with <em>git log</em>. However, there are a few more ways to use the log command than I know.</p>
+        <p><strong>git log --oneline</strong> will show the list of commits in one line format.</p>
+        <p><strong>git log -s "keyword"</strong> displays a list of commits that contain the keyword in the message.</p>
+        <p><strong>git log --oneline --graph -- graph</strong> shows a visual representation of how the branches and commits<br>
+        were created in order to help you make sense of your repository. Using --oneline makes the --graph command shorter.</p>
+
+        <h2><strong>git commit ammend</strong></h2>
+        <p>Git's <em>--amend</em> flag is really useful when updating a commit. It allows for correction and editing of commits<br>
+        without having to create entire new ones.</p>
+        <p>For example, you have just finished committing a lenghty feature, and find out after that there is a syntax error<br>
+        causing a bug. To avoid creating a new commit, you can create the changes, stage them with <em>git add</em>, and then<br>
+        type the command <strong>git commit --amend</strong>.</p>
+        <p>Remember that although it seems <strong>git commit --amend</strong> is updating the last commit, what is really<br>
+        happening is an entire replacement. So when using the above command, your terminal will make you update your commit<br>
+        message.</p>
+        <p>However, if you want to keep the same commit message then make sure to write:</p>
+        <p><strong>git commit --amend --no-edit</strong></p>
+
+        <h2><strong>git alias commands</strong></h2>
+        <p>When grouping commands together you can end upo writing long lines of code such as:</p>
+        <p><strong>$ git log --pretty=format: "%h %s" --graph</strong></p>
+        <p>Fortunately, Git offers a helpful feature that can make your Git experience simpler, easier, and more familiar.<br>
+        aliases!</p>
+        <p>If you have a set of commands you use regularly and would want to save some time from fully typing them, you can<br>
+        easily set up an alias for each command using Git config.</p>
+        <p>Below are a few examples:</p>
+        <p><strong>$ git config --global alias.co "checkout"</strong><br>
+        <strong>$ git config --global alias.br "branch"</strong><br>
+        <strong>$ git config --global alias.glop "log --pretty=format: "%h %s" --graph"</strong></p>
+        <p>Once the alias are configured, next time you want to check out to another branch you could type the command:<br></p>
+        
+    </body>
+
+
+</html>

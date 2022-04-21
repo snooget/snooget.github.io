@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html>
+
+    <head>
+        <title>Command Line Manipulation Review Notes</title>
+    </head>
+
+    <body>
+        <h1>Command Line Manipulation Review Notes</h1>
+        <h2>So far I have learned:</h2>
+            <p>So far I have learned how to use the command line to view and manipulate the filesystem. <br>
+            <br>Here is what can be generalized so far:</p>
+            
+            <ul>
+                <li>Options modify the behavior of commands</li>
+                <br>
+                <li>($ ls -a) Lists all contents of a directory including hidden files in that directory.</li>
+                <li>($ ls -l) Lists all conent in long format.</li>
+                <li>($ ls -t)  Orders files and directories by the date they were last modified.</li>
+                <li>Multiple options can be used together, like ($ ls -alt).</li>
+                <br>
+                <li>From the command line you can also copy, move and remove files and directories.</li>
+                <li>($ cp) Copies files.</li>
+                <li>($ mv) Moves and renames files.</li>
+                <li>($ rm) Removes files.</li>
+                <li>($ rm -r) Removes directories</li>
+                <br>
+                <li>Wildcards are useful for selecting groups of files and directories.</li>
+            </ul>    
+
+            <br>
+            <h3>Quick Questions:</h3><br>
+            <ol>
+                <li><strong>How would you delete a directory called music/?</strong></li>
+                <p> Answer: $ rm -r music/ (Remember that -r deletes directories and child directories.</p>
+                <br>
+                <li><strong>What command shows all files in the current directory in long format <br>
+                including hidden files?</strong></li>
+                <p>Answer: $ ls -al (-a option shows contents of a directory including ones that start with .. <br>
+                which are typically hidden. However, the -l option will also show content in long format.</p>
+                <br>
+                <li><strong>Which option allows you to list files by when they were last modified?</strong></li>
+                <p>Answer: $ ls -t (Shows files based on date last modified.</p>
+                <br>
+                <li><strong>Which command could you use to copy the contents of kendrick.txt <br>
+                to a new file called rappers.txt?</strong></li>
+                <p>Answer: $ cp kendrick.txt rappers.txt</p>
+                <br>
+                <li><strong>How would you delete all files in the directory media/ (but not the directory itself)?</strong></li>
+                <p>Answer: $ rm media/* (The rm command on its own cannot remove a directory, and the second <br>
+                argument does not specify the files inside media/) </p>
+                <br>
+                <li><strong>What is the purpose of an option?</strong></li>
+                <p>Answer: To modify the behavior of a command</p>
+                <br>
+                <li><strong>What command moves all files in the current directory to the directory school/?</strong></li>
+                <p>Answer: $ mv * school/ (mv takes the first argument * to mean all files in the current <br>
+                directory, and moves them to the destination school/ specified by the second argument) </p>
+            </ol>
+        
+        <!-- This below was all done on accident as I forgot I can make an unordered list with bullet points using html.
+            <p> - Options modify the behavior of commands <br>
+                - ($ ls -a) Lists all contents of a directory including hidden files in that directory.<br>
+                - ($ ls -l) Lists all conent in long format. <br>
+                - ($ ls -t)  Orders files and directories by the date they were last modified. <br>
+                - Multiple options can be used together, like ($ ls -alt). <br>
+                <br>
+                - From the command line you can also copy, move and remove files and directories.<br>
+                - ($ cp) Copies files
+                - ($ mv) Moves and renames files <br>
+                - ($ rm) Removes files <br>
+                - ($ rm -r) Removes directories. <br>
+                <br>
+                - Wildcards 
+            </p>
+        -->
+    </body>
+
+</html>
