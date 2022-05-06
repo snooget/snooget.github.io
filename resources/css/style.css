@@ -8,4 +8,9 @@ body {
     text-align: center;
     margin-top: 5px;
   }
-  
+ 
+  .example {
+
+    width: 500px;
+    height: auto;
+  }
