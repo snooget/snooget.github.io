@@ -33,4 +33,14 @@ body {
     background-color: #111;
   }
 
-  
+  .intro-to-snooget {
+    position: relative;
+    text-align: left;
+  }
+
+  .intro-to-snooget img {
+    float: right;
+    position: relative;
+    height: 400px;
+    width: auto;
+  }
