@@ -38,6 +38,14 @@ body {
     text-align: left;
   }
 
+  .intro-to-snooget h2 {
+    font-size: 30px;
+  }
+
+  .intro-to-snooget p {
+    font-size: 18px;
+  }
+
   .intro-to-snooget img {
     float: right;
     position: relative;
