@@ -33,17 +33,17 @@ body {
     background-color: #111;
   }
 
-  .intro-to-snooget {
-    position: relative;
-    text-align: left;
-  }
-
   .intro-to-snooget h2 {
     font-size: 30px;
+    vertical-align: middle;
+    position: absolute;
   }
 
   .intro-to-snooget p {
     font-size: 18px;
+    vertical-align: middle;
+    position: absolute;
+    line-height: 200px;
   }
 
   .intro-to-snooget img {
