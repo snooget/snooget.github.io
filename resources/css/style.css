@@ -84,3 +84,15 @@ body {
   .intro-to-snooget-2 p {
     font-size: 18px;
   }
+
+  .figure-1-hp {
+    display: inline-block;
+  }
+
+  .figure-2-hp {
+    display: inline-block;
+  }
+
+  .figure-3-hp {
+    display: inline-block;
+  }
