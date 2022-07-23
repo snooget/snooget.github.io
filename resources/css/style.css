@@ -37,6 +37,10 @@ body {
     display: block;
   }
 
+  .intro-to-snooget button {
+    position: absolute;
+  }
+
   .intro-to-snooget h2 {
     font-size: 30px;
     vertical-align: middle;
