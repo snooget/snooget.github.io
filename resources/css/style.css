@@ -62,9 +62,9 @@ body {
   }
 
   .intro-to-snooget img {
-    float: right;
-    position: relative;
-    height: 400px;
+    margin-left: 1000px;
+    display: inline-block;
+    height: 300px;
     width: auto;
     display: block;
     margin-bottom: 0%;
